@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Workshop for 10-12th Class Students: Roadmap 2025</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .mermaid {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .footnotes {
+            border-top: 1px solid #ddd;
+            margin-top: 30px;
+            padding-top: 20px;
+            font-size: 0.9em;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://magicofskills.com/assets/img/logo/logo.svg" class="logo" width="120"/>
+
+    <h1>AI Agent Workshop for 10-12th Class Students: Roadmap 2025</h1>
+
+    <p>Creating an engaging and educational AI workshop for high school students requires a balance of theory and hands-on practice. Here's a comprehensive workshop plan that can be completed in one hour while giving students a solid introduction to AI agents.</p>
+
+    <div class="section">
+        <h2>Workshop Overview</h2>
+        <p>This one-hour workshop will introduce students to the fundamentals of AI agents, from understanding how large language models work to building their own simple AI agent using practical tools. The session is designed to be both informative and interactive, with a hands-on Jupyter notebook component.</p>
+        
+        <div class="mermaid">
+        flowchart TD
+            A[Start: AI Agents Workshop] --> B[Introduction 5 minutes]
+            B --> C[How LLMs Work 10 minutes]
+            C --> D[RAG Applications 10 minutes]
+            D --> E[LangChain Basics 10 minutes]
+            E --> F[AI Agents & Tools 10 minutes]
+            F --> G[Hands-on Activity 15 minutes]
+            G --> H[End: Conclusion and Q&A]
+
+            %% Details in each segment as sub-nodes
+            subgraph Details
+                B1[Quick poll] --> B2[Workshop goals]
+                B --> B1
+                C1[Next Word Prediction] --> C2[The Prediction Process]
+                C2 --> C3[Training vs Fine-tuning]
+                C --> C1
+                D1[What is RAG?] --> D2[Why RAG Matters]
+                D2 --> D3[RAG Process Example]
+                D --> D1
+                E1[What is LangChain?] --> E2[Core Components]
+                E2 --> E3[Benefits of LangChain]
+                E --> E1
+                F1[What are AI Agents?] --> F2[Agent Components]
+                F2 --> F3[Agent Workflow]
+                F3 --> F4[Tools for Agents]
+                F --> F1
+                G1[Guide students through Jupyter Notebook Exercise]
+                G1 --> G2[Modify Agent, Add Tools, Create RAG System]
+                G --> G1
+            end
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Time Allocation</h2>
+        <ul>
+            <li>Introduction (5 minutes)</li>
+            <li>How LLMs Work (10 minutes)</li>
+            <li>RAG Applications (10 minutes)</li>
+            <li>LangChain Basics (10 minutes)</li>
+            <li>AI Agents &amp; Tools (10 minutes)</li>
+            <li>Hands-on Activity (15 minutes)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Detailed Content Plan</h2>
+
+        <h3>Introduction (5 minutes)</h3>
+        <p><strong>Opening Activity</strong>: Quick poll to gauge students' familiarity with AI tools like ChatGPT.</p>
+        <p><strong>Workshop Goals</strong>:</p>
+        <ul>
+            <li>Understand how large language models function</li>
+            <li>Learn about Retrieval-Augmented Generation (RAG)</li>
+            <li>Explore LangChain framework</li>
+            <li>Build a simple AI agent</li>
+        </ul>
+
+        <h3>How LLMs Work (10 minutes)</h3>
+        <p><strong>Key Concepts</strong>:</p>
+        <ol>
+            <li><strong>Next Word Prediction</strong>: Explain that LLMs like ChatGPT are essentially sophisticated next-word prediction systems. They analyze patterns in text to predict what words should come next in a sequence.</li>
+            <li><strong>The Prediction Process</strong>:
+                <ul>
+                    <li>LLMs calculate probabilities for the next likely words based on the input context</li>
+                    <li>Once a word is generated, it becomes part of the new context</li>
+                    <li>The model can't go back and change previous words</li>
+                </ul>
+            </li>
+            <li><strong>Training vs. Fine-tuning</strong>:
+                <ul>
+                    <li>Base models are trained on vast amounts of text data</li>
+                    <li>Models are then fine-tuned with human feedback to follow instructions better</li>
+                </ul>
+            </li>
+        </ol>
+        <p><strong>Visual Aid</strong>: Simple diagram showing how text input flows through the model to generate predictions.</p>
+        
+        <div class="mermaid">
+        graph LR
+            A[User Input] --> B[LLM Processor]
+            B --> C{Probability Calculation}
+            C --> D[Next Word Selection]
+            D --> E[Generated Text]
+            E --> F{More to Generate?}
+            F -- Yes --> G[Update Context]
+            G --> C
+            F -- No --> H[Final Output]
+            style A fill:#f9f,stroke:#333,stroke-width:2px
+            style E fill:#bbf,stroke:#333,stroke-width:2px
+            style H fill:#bfb,stroke:#333,stroke-width:2px
+        </div>
+
+        <h3>RAG Applications (10 minutes)</h3>
+        <p><strong>Key Concepts</strong>:</p>
+        <ol>
+            <li><strong>What is RAG?</strong>: Retrieval-Augmented Generation combines an LLM with the ability to retrieve information from external knowledge sources.</li>
+            <li><strong>Why RAG Matters</strong>:
+                <ul>
+                    <li>Helps overcome LLM limitations like outdated knowledge</li>
+                    <li>Prevents hallucinations (making up false information)</li>
+                    <li>Allows access to specific knowledge not in training data</li>
+                </ul>
+            </li>
+            <li><strong>RAG Process</strong>:
+                <ul>
+                    <li>Create external data repository</li>
+                    <li>Convert data into vector representations</li>
+                    <li>Retrieve relevant information based on user query</li>
+                    <li>Augment the LLM prompt with retrieved information</li>
+                </ul>
+            </li>
+        </ol>
+        <p><strong>Example</strong>: Show how a student research assistant could use RAG to answer questions about specific textbooks or class materials.</p>
+        
+        <div class="mermaid">
+        graph TD
+            A[User Query] --> B[Query Processing]
+            B --> C[Vector Database Search]
+            D[External Knowledge] --> E[Vectorization]
+            E --> F[Knowledge Base]
+            F --> C
+            C --> G[Relevant Documents]
+            G --> H[Context Augmentation]
+            H --> I[LLM]
+            I --> J[Accurate Response]
+            style A fill:#f9f,stroke:#333,stroke-width:2px
+            style D fill:#ff9,stroke:#333,stroke-width:2px
+            style J fill:#bfb,stroke:#333,stroke-width:2px
+        </div>
+
+        <h3>LangChain Basics (10 minutes)</h3>
+        <p><strong>Key Concepts</strong>:</p>
+        <ol>
+            <li><strong>What is LangChain?</strong>: An open-source framework that simplifies building applications with LLMs.</li>
+            <li><strong>Core Components</strong>:
+                <ul>
+                    <li>Provides tools to connect LLMs with external data sources</li>
+                    <li>Enables creation of chains of operations</li>
+                    <li>Allows for modular development of AI applications</li>
+                </ul>
+            </li>
+            <li><strong>Why Use LangChain?</strong>:
+                <ul>
+                    <li>Simplifies complex LLM interactions</li>
+                    <li>Provides ready-made components for common tasks</li>
+                    <li>Supports multiple LLM providers</li>
+                </ul>
+            </li>
+        </ol>
+        <p><strong>Visual Aid</strong>: Simple flowchart showing how LangChain connects different components.</p>
+        
+        <div class="mermaid">
+        graph TB
+            subgraph "LangChain Framework"
+            A[LLM Models] --- B[Prompt Templates]
+            B --- C[Chains]
+            C --- D[Agents]
+            E[Memory] --- C
+            F[Tools] --- D
+            G[Retrievers] --- D
+            end
+            style A fill:#bbf,stroke:#333,stroke-width:2px
+            style D fill:#bfb,stroke:#333,stroke-width:2px
+            style F fill:#ff9,stroke:#333,stroke-width:2px
+            style G fill:#f9f,stroke:#333,stroke-width:2px
+        </div>
+
+        <h3>AI Agents &amp; Tools (10 minutes)</h3>
+        <p><strong>Key Concepts</strong>:</p>
+        <ol>
+            <li><strong>What are AI Agents?</strong>: Programs that can perform tasks autonomously on behalf of users.</li>
+            <li><strong>Agent Components</strong>:
+                <ul>
+                    <li>Data acquisition</li>
+                    <li>Processing and analysis</li>
+                    <li>Decision making</li>
+                    <li>Action execution</li>
+                </ul>
+            </li>
+            <li><strong>Agent Workflow</strong>:
+                <ul>
+                    <li>Receive data</li>
+                    <li>Analyze information</li>
+                    <li>Decide on action</li>
+                    <li>Execute action</li>
+                </ul>
+            </li>
+            <li><strong>Tools for Agents</strong>:
+                <ul>
+                    <li>Search capabilities</li>
+                    <li>Calculator functions</li>
+                    <li>API connections</li>
+                    <li>Document analysis tools</li>
+                </ul>
+            </li>
+        </ol>
+        <p><strong>Example</strong>: Show a simple AI study assistant that can search for information, summarize text, and create flashcards.</p>
+        
+        <div class="mermaid">
+        sequenceDiagram
+            participant User
+            participant Agent
+            participant Tools
+            participant LLM
+            
+            User->>Agent: Request task
+            Agent->>LLM: Analyze request
+            LLM->>Agent: Determine action plan
+            Agent->>Tools: Select appropriate tool
+            Tools->>Agent: Return results
+            Agent->>LLM: Process results
+            LLM->>Agent: Generate response
+            Agent->>User: Deliver response
+        </div>
+
+        <h3>Hands-on Activity (15 minutes)</h3>
+        <p><strong>Jupyter Notebook Exercise</strong>: Guide students through building a simple AI agent using Python.</p>
+        
+        <pre><code>
+# Sample code for the notebook
+import os
+from langchain.llms import OpenAI
+from langchain.agents import load_tools, initialize_agent
+from langchain.agents import AgentType
+
+# Set up OpenAI API key (use a classroom shared key for the workshop)
+os.environ["OPENAI_API_KEY"] = "your-api-key-here"
+
+# Initialize the language model
+llm = OpenAI(temperature=0)
+
+# Load tools for the agent
+tools = load_tools(["wikipedia", "llm-math"], llm=llm)
+
+# Create an agent with the tools and the language model
+agent = initialize_agent(
+    tools, 
+    llm, 
+    agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+    verbose=True
+)
+
+# Test the agent with a question
+agent.run("What is the population of India divided by the population of the United States?")
+        </code></pre>
+        
+        <p><strong>Tasks for Students</strong>:</p>
+        <ol>
+            <li>Modify the agent to answer a different question</li>
+            <li>Add a new tool to the agent</li>
+            <li>Create a simple RAG system using a provided text file</li>
+        </ol>
+        
+        <div class="mermaid">
+        flowchart TD
+            A[Set up Environment] --> B[Initialize LLM]
+            B --> C[Configure Tools]
+            C --> D[Create Agent]
+            D --> E[Run Agent]
+            E --> F[Modify Agent]
+            style A fill:#f9f,stroke:#333,stroke-width:2px
+            style F fill:#bfb,stroke:#333,stroke-width:2px
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Workshop Materials</h2>
+
+        <h3>Pre-workshop Setup</h3>
+        <ol>
+            <li><strong>Jupyter Notebook</strong>: Prepare a notebook with code templates and explanations.</li>
+            <li><strong>API Keys</strong>: Set up classroom API keys for OpenAI or use Hugging Face open models.</li>
+            <li><strong>Sample Data</strong>: Create small text files for RAG experiments.</li>
+        </ol>
+
+        <h3>Visual Aids</h3>
+        <ol>
+            <li><strong>Slideshow</strong>: Create visually engaging slides with diagrams and minimal text.</li>
+            <li><strong>Process Flowcharts</strong>: Visual representations of LLM, RAG, and Agent workflows.</li>
+            <li><strong>Code Examples</strong>: Highlighted code snippets with explanations.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Additional Resources for Students</h2>
+        <ol>
+            <li><strong>Beginner-friendly AI tools</strong>: ChatGPT, Grammarly, Mathly</li>
+            <li><strong>Learning platforms</strong>: Unschooler for learning programming and AI</li>
+            <li><strong>GitHub repositories</strong>: Curated list of AI tools for further exploration</li>
+            <li><strong>Online courses</strong>: Introductory AI courses designed for beginners</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Workshop Extensions (if time permits)</h2>
+        <ol>
+            <li><strong>AI Ethics Discussion</strong>: Brief conversation about responsible AI use in education.</li>
+            <li><strong>Future Applications</strong>: Brainstorming session on how students could use AI agents in their studies.</li>
+            <li><strong>Advanced Challenges</strong>: Additional notebook exercises for faster students.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Post-Workshop Activities</h2>
+        <ol>
+            <li><strong>Mini-Project</strong>: Suggest a small project students can complete at home to extend their learning.</li>
+            <li><strong>Resources List</strong>: Provide links to free resources for continued learning.</li>
+            <li><strong>Community Forum</strong>: Set up a Discord or similar platform for post-workshop questions.</li>
+        </ol>
+    </div>
+
+    <div>⁂</div>
+
+    <div class="footnotes">
+        <p>This workshop structure provides a balanced introduction to AI agents while keeping the content accessible for high school students. The hands-on component ensures students gain practical experience, while the theoretical sections build a foundation for understanding how these technologies work.</p>
+    </div>
+</body>
+</html> 

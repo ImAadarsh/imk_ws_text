@@ -1,0 +1,30 @@
+{
+  "username": "AiConomist",
+  "URL": "https://www.instagram.com/",
+  "posts": [
+    {
+      "image": "/images/instagram/1.jpg",
+      "title": "AiConomist"
+    },
+    {
+      "image": "/images/instagram/2.jpg",
+      "title": "AiConomist"
+    },
+    {
+      "image": "/images/instagram/3.jpg",
+      "title": "AiConomist"
+    },
+    {
+      "image": "/images/instagram/4.jpg",
+      "title": "AiConomist"
+    },
+    {
+      "image": "/images/instagram/5.jpg",
+      "title": "AiConomist"
+    },
+    {
+      "image": "/images/instagram/6.jpg",
+      "title": "AiConomist"
+    }
+  ]
+}

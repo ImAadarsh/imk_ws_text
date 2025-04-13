@@ -1,0 +1,47 @@
+{
+  "metaData": {
+    "title" : "AiConomist - Your Only Station to fuel Ai Updated, latest Trends, Projects & More....",
+    "description" : "A modern and feature-rich blog template built with React, NextJS, and Tailwind CSS.",
+    "author" : "",
+    "keyword" : "minimal",
+    "ogImage" : "/images/ogimage.jpg"
+  },
+  "baseURL" : "",
+  "siteURL" : "https://aiconomist.vercel.app",
+  "logo" : "/images/logo.svg",
+  "logoWhite" : "/images/logo-white.svg",
+  "logoText" : "AiConomist",
+  "favicon" : "/images/favicon.png",
+
+  "subscriptionFormspreeID" : "xnqeeyyp",
+
+  "footerWidgets": {
+    "email" : "hello@authormail.com",
+    "phone" : "+1 (555) 123-4567"
+  },
+
+  "footerLinks": [
+    {
+      "title": "About",
+      "url": "/about"
+    },
+    {
+      "title": "Archive",
+      "url": "/archive"
+    },
+    {
+      "title": "Contact",
+      "url": "/contact"
+    },
+    {
+      "title": "Privacy Policy",
+      "url": "/privacy"
+    },
+    {
+      "title": "Terms",
+      "url": "/terms"
+    }
+  ],
+
+  "copyright" : "© 2025 Endeavour Digital. All rights reserved."
+}
